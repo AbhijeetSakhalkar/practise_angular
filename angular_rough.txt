@@ -1,0 +1,21 @@
+install node : nodejs.org : install latest satble version
+after installing : node --version ::: 6.9 is the minimum version required to run angular
+-----------------------------------------------------------------------------------------------
+Node Package Manager : NPM : to install external library tools
+Angular CLI: npm install -g @angular/cli
+ng --version
+
+ng new hello-world -> creates new angular project eith name "hello-world"
+
+-----------------------------------------------------------------------------------------------
+Typescript
+
+npm install -g typescript
+tsc --version
+
+tsc filename.ts -> this creates a js compiles / trasnpiled file.
+node filename.js to run the file
+
+-----------------------------------------------------------------------------------------------
+var i -> scope is of the nearest surrounding method
+let i -> scope is of nearest surrounding block (this is like java scope)
