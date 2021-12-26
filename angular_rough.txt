@@ -19,3 +19,46 @@ node filename.js to run the file
 -----------------------------------------------------------------------------------------------
 var i -> scope is of the nearest surrounding method
 let i -> scope is of nearest surrounding block (this is like java scope)
+-----------------------------------------------------------------------------------------------
+let a: number;
+a=1;
+//a='a'; this gives error
+let b: boolean;
+let c: string;
+let d: any;
+let e: number[] =[1,2,3,4,5]; //// this is how you declare array
+
+const colorRed = 0;
+const colorGreen = 1;
+const colorBlue = 2;
+
+enum Color {Red=0, Green=1, Blue=2, Purple=3}; //// this is how you declare enum
+let backgroundColor = Color.Red;
+-----------------------------------------------------------------------------------------------
+Type assertion
+
+let messageStr = 'abc'; // here type is fixed
+let endsWithBoolean = messageStr.endsWith('c');
+
+let messageStr2;
+messageStr2 = 'abc'
+let endsWithBoolean2 = (<string>messageStr2).endsWith('c');
+
+let messageStr3;
+messageStr3 = 'abc'
+let endsWithBoolean3 = (messageStr3 as string).endsWith('c');
+
+This assertion way does not restructure the object in the memory but only aserts the type. But the type of object at runtime is still "any".
+-----------------------------------------------------------------------------------------------
+Without arrow function:
+let functionName = function(param){
+   // method implementations
+}
+
+Arrow function:
+let functionName = (param) => {
+   // method implementations
+}
+-----------------------------------------------------------------------------------------------
+
+
