@@ -1,5 +1,5 @@
 
-import {Point3} from './Point'
+import {Point3} from './Point'  //// this is how you import. is a relative path.
 
 let drawPoint1 = function(point) {
  console.log("Inside drawPoint");
