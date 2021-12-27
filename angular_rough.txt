@@ -1,4 +1,7 @@
 https://www.youtube.com/watch?v=k5E2AVpwsko&ab_channel=ProgrammingwithMosh
+
+
+
 -----------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------
 
@@ -92,4 +95,6 @@ then add CoursesService to providers in app-module.ts
 -----------------------------------------------------------------------------------------------
 Automated/cli way to create a service
 ng g s serviceToBeCreated
+g - generate
+s - service
 	
