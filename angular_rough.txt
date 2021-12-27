@@ -65,4 +65,31 @@ let functionName = (param) => {
 }
 -----------------------------------------------------------------------------------------------
 
+Angular:
+Component:
 
+1. Create a component
+2. Register component to a module
+3. Add an element in the HTML markup
+-----------------------------------------------------------------------------------------------
+Automated/cli way to create a component:
+
+ng g c componentToBeCreated
+g - generate
+c - component
+
+ex. ng g c course
+-----------------------------------------------------------------------------------------------
+Service:
+Create a service without decorator / annotation
+use the service in the construction by new or dependancy injection
+ex.
+    constructor(service: CoursesService){ // this is dependancy injection
+        //let service = new CoursesService();
+        this.courses = service.getCourses();
+    }
+then add CoursesService to providers in app-module.ts
+-----------------------------------------------------------------------------------------------
+Automated/cli way to create a service
+ng g s serviceToBeCreated
+	
